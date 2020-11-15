@@ -20,4 +20,4 @@ $personne=new Personne($nom);
 
 require("index.php");
 
-
+php?>
