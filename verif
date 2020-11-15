@@ -1,0 +1,23 @@
+<?php
+
+require_once('Personne.php');
+
+$nom= $_GET['texte'] ?? 'pasdenom';//Si texte est vide alors nom='pasdenom'
+$email= $_GET['email'] ?? '';//Si l'email est vide alors il reste vide xD
+
+//filter_var nettoyage
+$nom=filter_var($nom, FILTER_SANITIZE_STRING);
+
+//email validation
+if (filter_var($email, FILTER_VALIDATE_EMAIL))
+{
+$trucaafficher="bon email";
+}
+else {
+$trucaafficher="mauvais email";;
+}
+$personne=new Personne($nom);
+
+require("index.php");
+
+

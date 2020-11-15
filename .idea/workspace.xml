@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b312d18-d4d2-45cf-9e2e-38a3bb2d124f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1k5pXzq34b5hq8fZ7pTakRf6ROG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b312d18-d4d2-45cf-9e2e-38a3bb2d124f" name="Default Changelist" comment="" />
+      <created>1605000350560</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605000350560</updated>
+      <workItem from="1605000351605" duration="7807000" />
+      <workItem from="1605302022521" duration="6923000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="696" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605304232073">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="696" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1846.1080@0.0.1846.1080" timestamp="1605304232073" />
+    <state x="1226" y="273" key="NewPhpClassDialog" timestamp="1605004225761">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="1226" y="273" key="NewPhpClassDialog/0.0.1846.1080@0.0.1846.1080" timestamp="1605004225761" />
+    <state x="960" y="731" key="NewPhpFileDialog" timestamp="1605001525863">
+      <screen x="0" y="0" width="1846" height="1080" />
+    </state>
+    <state x="960" y="731" key="NewPhpFileDialog/0.0.1846.1080@0.0.1846.1080" timestamp="1605001525863" />
+  </component>
+</project>
