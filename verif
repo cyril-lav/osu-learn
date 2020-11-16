@@ -19,5 +19,10 @@ $trucaafficher="mauvais email";;
 $personne=new Personne($nom);
 
 require("index.php");
+<<<<<<< HEAD
 
 php?>
+=======
+//test
+
+>>>>>>> e95046679c4a969421c932fdc5fe2146c2fb4c54
