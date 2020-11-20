@@ -1,5 +1,14 @@
 OUTPUT DU RESEAU DE NEURONES (WAGNER Sébastien) : 
 Gérer la position de la souris via le code : Grâce à la librairie pynput.mouse (à installer) on peut modifier la position de la souris (en instantané).
-mouse = controller() -> La variable mouse devient la variable d’accès  à la souris
-print(mouse.position) -> rend la position de la souris (x , y)
-mouse.position =  (x, y) -> Déplace la souris à la position x, y (x=0, y=0) en haut à gauche de l’écran
+  -mouse = controller() -> La variable mouse devient la variable d’accès  à la souris
+  -print(mouse.position) -> rend la position de la souris (x , y)
+  -mouse.position =  (x, y) -> Déplace la souris à la position x, y (x=0, y=0) en haut à gauche de l’écran
+
+Gérer les clicks de la souris : 
+  -mouse.click(Button.right, nb) -> click droit / nb = nombre de click(s)
+  -mouse.click(Button.left, 1) -> click gauche
+  -mouse.press(Button.right) -> click droit enfoncé
+  -mouse.press(Button.left) -> click gauche enfoncé
+  -mouse.release(Button.right) -> relache click droit
+  -mouse.release(Button.left) -> relache click gauche
+  -mouse.scroll(0, x) -> scroll si x > 0 vers le haut si x < 0 vers le bas
