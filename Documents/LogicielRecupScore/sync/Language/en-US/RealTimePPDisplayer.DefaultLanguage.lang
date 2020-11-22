@@ -1,0 +1,25 @@
+[en-US]
+UI_MENU_TOPMOST=Topmost
+TEXT_MODE_OUTPUT_PATH_FORMAT=[RealTimePPDisplayer]pp Output File: {0}
+MMF_MODE_OUTPUT_PATH_FORMAT=[RealTimePPDisplayer]Memory Mapping Output File: {0}
+FPS=FPS
+TextOutputPath=Text Output Path
+DisplayHitObject=Display Hit Object
+FontName=Font
+PPFontSize=pp Font Size
+PPFontColor=pp Font Color
+HitCountFontSize=Hit Count Font Size
+HitCountFontColor=Hit Count Font Color
+BackgroundColor=Background Color
+WindowHeight=Window Height
+WindowWidth=Window Width
+SmoothTime=Smooth Time
+Topmost=Topmost
+WindowTextShadow=Window Text Shadow
+OutputMethods=Output Methods
+DebugMode=Debug Mode
+PPFormat=pp Format
+HitCountFormat=Hit Count Format
+RoundDigits=Digits
+IgnoreTouchScreenDecrease=Ignore Touchscreen Nerf
+UseUnicodePerformanceInformation=Perfer metadata in original language
