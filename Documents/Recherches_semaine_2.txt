@@ -69,3 +69,9 @@ Possiblité avec Graphviz (librairie de création de graphes code pour la récup
 	-génére des images sous forme de graphes
 https://tgmstat.wordpress.com/2013/06/12/draw-neural-network-diagrams-graphviz/ 
 
+récuperation des infos sur la fenetre d'OSU! (Justin Miteran)
+
+Possibilité avec win32gui
+	- FindWindow(None, "osu!")
+	- GetWindowRect()
+voir code de test testFenetreOsu.py

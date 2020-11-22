@@ -10,4 +10,4 @@ while(1):
         window_rect   = GetWindowRect(window_handle)
         print(window_rect)
     else :
-        print("OSu est fermé")
+        print("OSU est fermé")
