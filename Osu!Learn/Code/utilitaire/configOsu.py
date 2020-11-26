@@ -36,7 +36,7 @@ def __configSkin(osuDir):
         # copier le skin dans le fichier
         __copySkin("../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName)
     else :
-        # si le skin est le même est different de celui a copier
+        # si le skin est le meme est different de celui a copier
         cmpDir = fc.dircmp("../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName, ignore=None, hide=None)
         if(cmpDir.same_files != cmpDir.left_list or cmpDir.same_files != cmpDir.right_list):
             # supprime dossier du skin
