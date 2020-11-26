@@ -8,6 +8,13 @@
 
 
 ### Travail de la semaine 2 [(voir ici)](TravailParSemaine/semaine2/semaine2.md) :  
+- OUTPUT DU RESEAU DE NEURONES (WAGNER Sébastien)  
+- Partie Tensorflow et autres outils (Cyril Laveyssiere)  
+- Partie détection des cercles (Cyril Laveyssiere)  
+- Persistence du modèle (Justin Miteran)  
+- Visualisation du modèle (Justin Miteran)  
+- Récuperation des infos sur la fenêtre d'OSU! (Justin Miteran & Wagner Sébastien)
+- Trouver une solution pour obtenir le score du jeu(Hugo Barrandon)  
 
 ### Travail de la semaine 3 [(voir ici)](TravailParSemaine/semaine3/semaine3.md) :  
 [Ajout](Config_Osu/config_Osu.md) des maps, du skin et du fichier de configuration d'Osu!.
