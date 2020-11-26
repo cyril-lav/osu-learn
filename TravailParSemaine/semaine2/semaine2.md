@@ -37,17 +37,17 @@ Couche de convolution : https://www.tensorflow.org/api_docs/python/tf/keras/laye
 
 ### Partie détection des cercles (Cyril Laveyssiere)  
   
-#####Comment détecter les cercles ?  
+##### Comment détecter les cercles ?  
 Deux outils :  
-	le filtre de Sobel : 
-Utilisé pour la detection de bords sur des images complexes en calculant le gradient de l’intensité de chaque pixel. Outils : openCV, tensorflow, scipy.  
-Lien utile : 
+	-le filtre de Sobel :  
+	-Utilisé pour la detection de bords sur des images complexes en calculant le gradient de l’intensité de chaque pixel. Outils : openCV, tensorflow, scipy.  
+	-Lien utile : 
 https://www.codingame.com/playgrounds/38470/how-to-detect-circles-in-images  
-	la transformée de Hough :
-Utilisé pour détecter des lignes et de formes (donc de cercles et sliders) même s’il manque des points sur les formes ou l’image est dégradée. Outils : openCV, numpy, scipy.  
-Liens utiles :
-https://github.com/PavanGJ/Circle-Hough-Transformé  
-https://subscription.packtpub.com/book/application_development/9781788474443/4/ch04lvl1sec58/detecting-lines-and-circles-using-the-hough-transform  
+	-la transformée de Hough :
+	Utilisé pour détecter des lignes et de formes (donc de cercles et sliders) même s’il manque des points sur les formes ou l’image est dégradée. Outils : openCV, numpy, scipy.  
+	-Liens utiles :
+	-https://github.com/PavanGJ/Circle-Hough-Transformé  
+	-https://subscription.packtpub.com/book/application_development/9781788474443/4/ch04lvl1sec58/detecting-lines-and-circles-using-the-hough-transform  
   
 ### Persistence du modele (Justin Miteran)  
 
@@ -66,13 +66,13 @@ requière numpy, tensorflow, keras
 Lien utile :  
 https://www.tensorflow.org/guide/keras/save_and_serialize  
 
-###Visualisation du modele (Justin Miteran)  
+### Visualisation du modele (Justin Miteran)  
 
 Possiblité avec Graphviz (librairie de création de graphes code pour la récuperation du model a faire nous même)  
 	-génére des images sous forme de graphes  
 https://tgmstat.wordpress.com/2013/06/12/draw-neural-network-diagrams-graphviz/ 
   
-###récuperation des infos sur la fenetre d'OSU! (Justin Miteran & Wagner Sébastien)  
+### récuperation des infos sur la fenetre d'OSU! (Justin Miteran & Wagner Sébastien)  
   
 Possibilité avec win32gui  
 	- FindWindow(None, "osu!")  
