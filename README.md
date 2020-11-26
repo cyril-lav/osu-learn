@@ -10,4 +10,4 @@
 ### Travail de la semaine 2:  
 
 ### Travail de la semaine 3:  
-[Ajout](Config_Osu/config_Osu.me) des maps, du skin et du fichier de configuration d'Osu!.
+[Ajout](Config_Osu/config_Osu.md) des maps, du skin et du fichier de configuration d'Osu!.
