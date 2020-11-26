@@ -1,0 +1,55 @@
+[19:02:28] ???....
+[19:02:29] ?? InternalPlugin ?...
+[19:02:29] Beatmap Suggest Command By Dark Projector
+[19:02:29] ?? Beatmap Suggest Command ?...
+[19:02:29] [BeatmapSuggestPlugin]??ApiKey,???????ApiKey??????????.ApiKey????:https://osu.ppy.sh/p/api
+[19:02:29] ?? ConfigGUI ?...
+[19:02:29] ?? Tray ?...
+[19:02:29] ?? Default Plug-ins ?...
+[19:02:29] Default Plugin by Deliay
+[19:02:29] ?? Now Playing ?...
+[19:02:29] Now Playing By Deliay, DarkProjector
+[19:02:29] MSN类注册成功！
+[19:02:29] ?? OsuRTDataProvider ?...
+[19:02:29] OsuRTDataProvider By KedamaOvO
+[19:02:29] ?? PP Query ?...
+[19:02:29] PP Query Plugin By Deliay >w<
+[19:02:29] ?? RealTimePPDisplayer ?...
+[19:02:29] RealTimePPDisplayer By KedamaOvO Ver.1.8.7
+[19:02:29] ?? Recently Message Query Plugin ?...
+[19:02:29] Recently Message Query Plugin By Dark Projector
+[19:02:29] ?? Ban Manager ?...
+[19:02:29] Ban Manager By Dark Projector
+[19:02:29] ??? 11 ? ??
+[19:02:29] ??? 2 ? ???
+[19:02:29] ??? 1 ? Client
+[19:02:29] ??? 25 ? ??
+[19:02:29] ??? 12 ? ???
+[19:02:29] ?????
+[19:02:29] [ConfigGUI]Enter "config" to open the configuration panel.
+[19:02:29] [OsuRTDataProviderPlugin]Tourney Mode: False
+[19:02:29] Fetch Sync update..
+[19:02:30] Sync update check done.Enjoy~
+[19:02:30] ???? osu???????? ver 2.18.5.0
+[19:02:30] ?? 'help' ??????
+
+
+[19:02:36] [OsuRTDataProviderPlugin]ForceOsuSongsDirectory: 
+[19:02:36] [OsuRTDataProviderPlugin]The ForceOsuSongsDirectory does not exist, try searching for the songs path.
+[19:02:36] [OsuRTDataProviderPlugin]OSU Client Verison:b20201110 ORTDP Version:1.6.6
+[19:02:36] [OsuRTDataProviderPlugin]Osu Path: C:\Users\hugob\Desktop\Jeu\OSU!\Game
+[19:02:36] [OsuRTDataProviderPlugin]Beatmap Path: C:\Users\hugob\Desktop\Jeu\OSU!\Game\Songs
+[19:02:36] [OsuRTDataProviderPlugin][ID:0]Found osu!.exe process
+[19:02:36] [OsuRTDataProviderPlugin][ID:0]Init StatusFinder Success!
+[19:02:36] [OsuRTDataProviderPlugin]Internal Status:SelectPlay
+[19:02:36] [OsuRTDataProviderPlugin]osu!version compatible condition: 20201110 < 20190816 ?
+[19:02:36] [OsuRTDataProviderPlugin][ID:0]Init BeatmapFinder Success!
+[19:02:40] [OsuRTDataProviderPlugin]Internal Status:Play
+[19:02:41] [OsuRTDataProviderPlugin][ID:0]Init PlayFinder Success!
+[19:02:41] [OsuRTDataProviderPlugin][ID:0]Init ModeFinder Success!
+[19:02:41] [OsuRTDataProviderPlugin][ID:0]Init HitEventFinder Success!
+[19:02:56] [OsuRTDataProviderPlugin]Internal Status:SelectPlay
+[19:03:13] [OsuRTDataProviderPlugin]Internal Status:Play
+[19:03:47] [OsuRTDataProviderPlugin]Internal Status:SelectPlay
+[19:05:35] Exiting...
+[19:05:35] Saved.
