@@ -16,6 +16,7 @@
   -mouse.release(Button.right) -> relache click droit  
   -mouse.release(Button.left) -> relache click gauche  
   -mouse.scroll(0, x) -> scroll si x > 0 vers le haut si x < 0 vers le bas  
+  [code ici](test/test_souris.py)
 
 
 ### Partie Tensorflow et autres outils (Cyril Laveyssiere)  
