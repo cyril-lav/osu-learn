@@ -79,3 +79,19 @@ Possibilité avec win32gui
 	- FindWindow(None, "osu!")  
 	- GetWindowRect()  
 [voir](test/testFenetreOsu.py) code de test testFenetreOsu.py  
+
+### Trouver une solution pour obtenir le score du jeu(Hugo Barrandon)  
+##### Fonctionnement du logiciel :  
+-Lancer le logiciel.  
+-Il détecte automatiquement OSU ! et le lancement d’une musique.  
+-Pour le moment il sort les outputs du score dans sync/Plugin/Test.txt  
+(Pas de reset auto de fichier, il faut le vider manuellement entre chaque musique pour le moment)  
+
+### ! Bug : le fichier enregistre 4 inputs indésirables à la fin d’une musique, il nous reste à trouver comment l’éviter.   
+
+Info complémentaire : la récupération des informations ce fait grâce au plugin « OsuRTDataProvider ». Il a été modifier (par Hugo Barrandon) pour retourner les données du score dans un fichier. Ceci est possible car le code est libre sur GitHub (OsuSync/OsuRTDataProvider: A sync plugin, get OSU! game data from memory. (github.com)). On peut donc facilement modifier la sortie pour l’envoyer sur une Socket ou un tube.  
+A venir : 	-corriger le bug  
+		-modifier le code pour qu’il envois les informations au code python.  
+		-(Si on a le temps) recréer le code en se basant sur ce code pour retirer toutes les fonctionnalités inutiles.  
+		
+[lien application](LogicielRecupScore)		
