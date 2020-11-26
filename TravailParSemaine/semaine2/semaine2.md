@@ -66,13 +66,13 @@ requière numpy, tensorflow, keras
 Lien utile :  
 https://www.tensorflow.org/guide/keras/save_and_serialize  
 
-### Visualisation du modele (Justin Miteran)  
+### Visualisation du modèle (Justin Miteran)  
 
-Possiblité avec Graphviz (librairie de création de graphes code pour la récuperation du model a faire nous même)  
+Possiblité avec Graphviz (librairie de création de graphes, code pour la récuperation du model à faire nous même)  
 	-génére des images sous forme de graphes  
 https://tgmstat.wordpress.com/2013/06/12/draw-neural-network-diagrams-graphviz/ 
   
-### récuperation des infos sur la fenetre d'OSU! (Justin Miteran & Wagner Sébastien)  
+### récuperation des infos sur la fenêtre d'OSU! (Justin Miteran & Wagner Sébastien)  
   
 Possibilité avec win32gui  
 	- FindWindow(None, "osu!")  
