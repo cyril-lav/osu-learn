@@ -13,3 +13,6 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;- .config() *#permet de configurer le jeu*  
       &nbsp;&nbsp;&nbsp;- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
       
+### MAP TEST ET SCRIPT DU CURSEUR (WAGNER Sébastien) :  
+#### Créer des maps tests pour l'IA :  
+  -[script](../../osu-learn/Config_Osu/map/Silent pather - Osu!Learn--circle.osz) map avec un seul cercle
