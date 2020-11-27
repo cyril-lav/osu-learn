@@ -5,7 +5,7 @@ import win32gui
 # for handle in results:
 #     print(get(handle))
 while(1):
-    window_handle = win32gui.FindWindow(None, "osu!")
+    window_handle = win32gui.FindWindow("WindowsForms10.Window.2b.app.0.358a177_r10_ad1", "osu!")
     if window_handle!=0 :
         window_rect = win32gui.GetWindowRect(window_handle)
         print(window_rect)
