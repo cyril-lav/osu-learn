@@ -42,10 +42,10 @@ while(x != -1):
     if posC[0] < posF[0]+2:
         mouse.position = (posF[0]+2,posC[1])
     #si ma souris dépace du côté droit je la déplace vers la gauche
-    if posC[0]  >posF[2]-5:
+    if posC[0] > posF[2]-5:
          mouse.position = (posF[2]-5,posC[1])
     #si ma souris dépace vers le haut je la déplace vers le bas
-    if posC[1 ]< posF[1]+26:
+    if posC[1 ] < posF[1]+26:
          mouse.position = (posC[0],posF[1]+26)
     #si ma souris dépace vers le bas je la déplace vers le haut
     if posC[1] > posF[3]-4:
