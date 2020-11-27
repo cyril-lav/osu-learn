@@ -1,4 +1,6 @@
 import win32gui
+import time
+
 """
 results = []
 win32gui.EnumWindows(lambda handle, liste: liste.append(handle), results)
@@ -10,10 +12,12 @@ for handle in results:
         print(get(handle))
         print(get2(handle))
 """
+
 while(1):
+    time.sleep(1)
     window_handle = win32gui.FindWindow(None, "osu!")
     if window_handle!=0 and win32gui.GetClassName(window_handle)[0:28] == "WindowsForms10.Window.2b.app":
-        window_rect = win32gui.GetWindowRect(window_handle)
-        print(window_rect)
+            window_rect = win32gui.GetWindowRect(window_handle)
+            print(window_rect)
     else :
         print("OSU est fermé")
