@@ -7,9 +7,9 @@
   -[script](../../Osu!Learn/Code/utilitaire/testConfig.py) de test de configuration du jeu Osu!  
 
 #### Classes Config :  
-**Constructeur :**  
+Constructeur :  
       &nbsp;&nbsp;&nbsp;- Config()  
-**Fonctions :**  
+Fonctions :  
       &nbsp;&nbsp;&nbsp;- .config() *#permet de configurer le jeu*  
       &nbsp;&nbsp;&nbsp;- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
       
