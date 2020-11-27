@@ -2,14 +2,14 @@
 
 
 ### SCRIPT CONFIGURATION OSU! (MITERAN Justin) :  
-##### Créer un script capable de configurer automatiquement le jeu osu avec le [SKIN et le fichier de configuration](../../Osu!Learn/Assets/config).  
+#### Créer un script capable de configurer automatiquement le jeu osu avec le [SKIN et le fichier de configuration](../../Osu!Learn/Assets/config).  
   -[script](../../Osu!Learn/Code/utilitaire/configOsu.py) contenant la classe Config  
   -[script](../../Osu!Learn/Code/utilitaire/testConfig.py) de test de configuration du jeu Osu!  
 
-##### Classes Config :  
+#### Classes Config :  
 **Constructeur :**  
-      &nbsp&nbsp&nbsp- Config()  
+      &nbsp:&nbsp:&nbsp:- Config()  
 **Fonctions :**  
-      &nbsp&nbsp&nbsp- .config() *#permet de configurer le jeu*  
-      &nbsp&nbsp&nbsp- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
+      &nbsp:&nbsp:&nbsp:- .config() *#permet de configurer le jeu*  
+      &nbsp:&nbsp:&nbsp:- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
       
