@@ -9,7 +9,7 @@
 ##### Classes Config :  
 **Constructeur :**  
       - Config()  
-**Fonctions :**
+**Fonctions :**  
       - .config() #permet de configurer le jeu  
       - .reload() #permet de reinitialiser les parametres du jeu de l'utilisateur  
       
