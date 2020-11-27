@@ -15,4 +15,12 @@ Fonctions :
       
 ### MAP TEST ET SCRIPT DU CURSEUR (WAGNER Sébastien) :  
 #### Créer des maps tests pour l'IA :  
-  -[script](../../osu-learn/Config_Osu/map/Silent pather - Osu!Learn--circle.osz) map avec un seul cercle
+  -Silent pather - Osu!Learn--circle.osz) -> map avec un seul cercle  
+  -Silent Panther - Osu!learn--spinner.osz -> map avec un seul spinner  
+  -Silent Panther - Osu!learn--slider.osz -> map avec un seul slider  
+  -Silent Panther - Osu!Learn--Full_cercles.osz -> map avec plusieurs cercles  
+  - --- - Osu!Learn.osz -> map test avec de tout  
+
+#### Créer un script pour que le curseur reste dans la fenêtre du jeu :  
+  -[curseur.py](../../Osu!Learn/Code/utilitaire/curseur.py) qui permet que le curseur reste dans la fenêtre du jeu
+  
