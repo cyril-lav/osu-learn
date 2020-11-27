@@ -10,14 +10,15 @@ cf.config()
 results = []
 
 while(1):
-        window_handle = win32gui.FindWindow(None, "osu!")
-		if window_handle!=0 and win32gui.GetClassName(window_handle)[0:28] == "WindowsForms10.Window.2b.app":
-            print("jeu Osu! lancé")
-            break
-        
-	window_handle = win32gui.FindWindow(None, "osu!")
-	if window_handle!=0 and win32gui.GetClassName(window_handle)[0:28] == "WindowsForms10.Window.2b.app":
-    1
+    window_handle = win32gui.FindWindow(None, "osu!")
+    if window_handle!=0 and win32gui.GetClassName(window_handle)[0:28] == "WindowsForms10.Window.2b.app":
+        print("jeu Osu! lancé")
+        break
+    
+window_handle = win32gui.FindWindow(None, "osu!")
+while window_handle!=0 and win32gui.GetClassName(window_handle)[0:28]=="WindowsForms10.Window.2b.app":
+    window_handle = win32gui.FindWindow(None, "osu!")
+
     
 time.sleep(1)
 
