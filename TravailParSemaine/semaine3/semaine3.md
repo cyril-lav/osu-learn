@@ -24,7 +24,7 @@ Fonctions :
 Constructeur :  
       &nbsp;&nbsp;&nbsp;- Trainer()  
 Fonctions :  
-<div margin-left:40px>
+<div style="border:5px solid black">
       .createImg(taille,cercle) *# génère une image noir avec un cercle blanc pour entrainer l'IA*  
       - taille : tuple *# (x,y) taille x et y de l'image en pixels*  
       - cercle : boolean *# False pour générer un cercle et True pour générer un deuxième cercle autour*  
