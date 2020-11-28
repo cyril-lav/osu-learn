@@ -14,13 +14,13 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
 
 ### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
-#### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.[img](../../Osu!Learn/Assets/imgAiTrainer/img.png)  
+#### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.<img src="../../Osu!Learn/Assets/imgAiTrainer/img.png" \>
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
 
 #### Classes Trainer :  
 Constructeur :  
-      &nbsp;&nbsp;&nbsp;- Trainer()
+      &nbsp;&nbsp;&nbsp;- Trainer()  
 Fonctions :  
       &nbsp;&nbsp;&nbsp;- .createImg(taille,cercle) *#génère une image noir avec un cercle blanc pour entrainer l'IA*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- taille : tuple *#(x,y) taille x et y de l'image en pixels*  
