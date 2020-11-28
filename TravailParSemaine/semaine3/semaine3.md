@@ -14,7 +14,7 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;.reload() *# permet de reinitialiser les parametres du jeu de l'utilisateur*  
 
 ### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
-#### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.<img src="../../Osu!Learn/Assets/imgAiTrainer/img.png" size="200px">
+#### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.<img src="../../Osu!Learn/Assets/imgAiTrainer/img.png" width="200px">
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
 
