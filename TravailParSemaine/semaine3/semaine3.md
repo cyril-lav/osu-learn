@@ -15,7 +15,7 @@ Fonctions :
 
 ### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
 #### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.
-<div style="text-align:center"><img src="../../Osu!Learn/Assets/imgAiTrainer/img.png" width="200px"></div>
+<img style="vertical-align:middle" src="../../Osu!Learn/Assets/imgAiTrainer/img.png" width="200px">
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
 
