@@ -3,8 +3,8 @@
 
 ### SCRIPT CONFIGURATION OSU! (MITERAN Justin) :  
 #### Créer un script capable de configurer automatiquement le jeu osu avec le [SKIN et le fichier de configuration](../../Osu!Learn/Assets/config).  
-  -[script](../../Osu!Learn/Code/utilitaire/configOsu.py) contenant la classe Config  
-  -[script](../../Osu!Learn/Code/utilitaire/testConfig.py) de test de configuration du jeu Osu!  
+  -[script](../../Osu!Learn/Code/utilitaire/config/configOsu.py) contenant la classe Config  
+  -[script](../../Osu!Learn/Code/utilitaire/config/testConfig.py) de test de configuration du jeu Osu!  
 
 #### Classes Config :  
 Constructeur :  
@@ -12,6 +12,19 @@ Constructeur :
 Fonctions :  
       &nbsp;&nbsp;&nbsp;- .config() *#permet de configurer le jeu*  
       &nbsp;&nbsp;&nbsp;- .reload() *#permet de reinitialiser les parametres du jeu de l'utilisateur*  
+
+### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
+#### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.[img](../../Osu!Learn/Assets/imgAiTrainer/img.png)  
+  -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
+  -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
+
+#### Classes Trainer :  
+Constructeur :  
+      &nbsp;&nbsp;&nbsp;- Trainer()
+Fonctions :  
+      &nbsp;&nbsp;&nbsp;- .createImg(taille,cercle) *#génère une image noir avec un cercle blanc pour entrainer l'IA* 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- taille : tuple *#(x,y) taille x et y de l'image en pixels*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- cercle : boolean *False pour générer un cercle et True pour générer un deuxième cercle autour*  
       
 ### MAP TEST ET SCRIPT DU CURSEUR (WAGNER Sébastien) :  
 #### Créer des maps tests pour l'IA :  
