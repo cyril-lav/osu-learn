@@ -50,15 +50,15 @@ class Config:
         # si le dossier du skin n'existe pas
         if not(os.path.exists(osuDir+"/Skins/"+skinName)):
             # copier le skin dans le fichier
-            self.__copySkin("../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName)
+            self.__copySkin("../../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName)
         else :
             # si le skin est le meme est different de celui a copier
-            cmpDir = fc.dircmp("../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName, ignore=None, hide=None)
+            cmpDir = fc.dircmp("../../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName, ignore=None, hide=None)
             if(cmpDir.same_files != cmpDir.left_list or cmpDir.same_files != cmpDir.right_list):
                 # supprime dossier du skin
                 sh.rmtree(osuDir+"/Skins/"+skinName)
                 # copier le skin dans le fichier
-                self.__copySkin("../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName)
+                self.__copySkin("../../../Assets/config/"+skinName,osuDir+"/Skins/"+skinName)
       
     # fonction qui configure les options du jeu
     def __configOption(self,osuDir):
@@ -80,7 +80,7 @@ class Config:
                 # on renomme le fichier .cfg en <nom du fichier>.old
                 os.rename(fullFile, fullFile+".old")
                 # on copie dans le dossier osu le fichier de configuration a charger
-                sh.copy("../../Assets/config/"+configName, osuDir)
+                sh.copy("../../../Assets/config/"+configName, osuDir)
                 # on le renomme avec le nom du fichier à remplacer
                 os.rename(os.path.join(osuDir,configName), fullFile)
                 self.__fullFile = fullFile
