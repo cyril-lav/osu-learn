@@ -28,10 +28,10 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- taille : tuple *# (x,y) taille x et y de l'image en pixels*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- cercle : boolean *# False pour générer un cercle et True pour générer un deuxième cercle autour*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return :  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- x : int *# Coordonée x du centre du cercle*  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- y : int *# Coordonée y du centre du cercle*  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon1 : rayon1 *# Rayon du cercle*  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon2 : rayon2 *# None si ```cercle=False``` ou le rayon du cercle généré autour du premier*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- x : int *# Coordonée x du centre du cercle*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- y : int *# Coordonée y du centre du cercle*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon1 : rayon1 *# Rayon du cercle*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon2 : rayon2 *# None si ```cercle=False``` ou le rayon du cercle généré autour du premier*  
       
 ### MAP TEST ET SCRIPT DU CURSEUR (WAGNER Sébastien) :  
 #### Créer des maps tests pour l'IA :  
