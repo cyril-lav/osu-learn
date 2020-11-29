@@ -44,3 +44,6 @@ Fonctions :
 #### Créer un script pour que le curseur reste dans la fenêtre du jeu :  
   -[curseur.py](../../Osu!Learn/Code/utilitaire/curseur.py) qui permet que le curseur reste dans la fenêtre du jeu
   
+### Création du skin (Le Teuff Ivan) :  
+Le skin créer pour l'IA est composé d'images simples et épuré, toutes les informations parasites ont été enlevées.
+
