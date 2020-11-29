@@ -44,3 +44,6 @@ Fonctions :
 #### Créer un script pour que le curseur reste dans la fenêtre du jeu :  
   -[curseur.py](../../Osu!Learn/Code/utilitaire/curseur.py) qui permet que le curseur reste dans la fenêtre du jeu
   
+### Script détection de cercles et bordures (LAVEYSSIERE Cyril) :
+	[Script](../Osu!Learn/Code/circleDetection) d'essais pour détection de cercles et bordures pour mesurer le temps de calcul avec openCV.
+	-> temps de calcul de l'ordre du centième de seconde, essayer de remplacer par un réseau de neurones

@@ -32,5 +32,9 @@ def circlesDetection():
 
 tr = Trainer()
 print(tr.createImg((800,600),False, 10))
-edgesDetection()
-#circlesDetection()
+
+# Commenter/décommenter l'un ou l'autre pour choisir entre
+# la détection de cercle ou la détection de bordures
+
+#edgesDetection()
+circlesDetection()
