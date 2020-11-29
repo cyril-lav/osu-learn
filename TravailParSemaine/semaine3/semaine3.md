@@ -46,7 +46,7 @@ Fonctions :
   
   
 ### Script détection de cercles et bordures (LAVEYSSIERE Cyril) :
-	[Script](../Osu!Learn/Code/circleDetection) d'essais pour détection de cercles et bordures pour mesurer le temps de calcul avec openCV.
+[Script](../Osu!Learn/Code/circleDetection) d'essais pour détection de cercles et bordures pour mesurer le temps de calcul avec openCV.
 	-> temps de calcul de l'ordre du centième de seconde, essayer de remplacer par un réseau de neurones
 
 ### Création du skin (Le Teuff Ivan) :  
