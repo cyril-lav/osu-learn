@@ -21,17 +21,25 @@ def position():
     #sinon retourne les coordonnée innexactes et -1 en code d'erreur
     return win32gui.GetWindowRect(window_handle),-1
 
+#fonction de vérification de position de la souris x,y -> Position du curseur / xF_g,yF_g -> position en haut à gauche de la fenêtre / xF_d,yF_d -> position en bas à droite de la fenêtre
+def isSortie(x,y):
+    #Si le curseur est sorti de la fenêtre je return False sinon je return True
+    return x < 0 or x > 800 or y < 0 or y > 600
 
-#je déclare mouse comme variable d'accès de mon curseur
-mouse = Controller()
-#posF la position de ma fenêtre et x mon code de retoure
-posF,x = position()
-#je place ma souris au centre de la fenêtre
-mouse.position = (((posF[2]-posF[0])/2),((posF[3]-posF[1])/2))
-#j'attend 3 seconde pour éviter les erreurs
-time.sleep(3)
+#fonction qui traduit les coordonnée relative à la fenêtre en coordonnée relative à l'écran
+def viser(xF_g,yF_g,xV,yV):
+        return xV+xF_g+2,yV+yF_g+26
 
+#fonction de clique
+def cliquer():
+    if isClic:
+        souris.release(Button.left)
+        isClic = False
+    else :
+        souris.press(Button.left)
+        isClic = True
 
+"""
 #tant que la fenêtre est affichée
 while(x != -1):
     #je récupère la position et le code de retour
@@ -50,7 +58,7 @@ while(x != -1):
     #si ma souris dépace vers le bas je la déplace vers le haut
     if posC[1] > posF[3]-4:
         mouse.position = (posC[0],posF[3]-4)
-
+"""
 print("fin")
 
 
