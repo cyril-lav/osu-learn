@@ -15,7 +15,7 @@ Fonctions :
       
 ### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
 #### Créer un script capable de générer une image contenant un cercle pour entrainer l'IA de reconnaissance de cercle.
-<p align="center"><img src="../../Osu!Learn/Assets/imgAiTrainer/img.png" width="200px"></p>
+<p align="center"><img src="../../Osu!Learn/Assets/imgAiTrainer/cercle.png" width="200px"></p>
 
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
@@ -28,8 +28,7 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- taille : tuple *# (x,y) taille x et y de l'image en pixels*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- cercle : boolean *# False pour générer un cercle et True pour générer un deuxième cercle autour*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return :  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- x : int *# Coordonée x du centre du cercle*  
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- y : int *# Coordonée y du centre du cercle*  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (x,y) : tuple *# Coordonée x et y du centre du cercle*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon1 : rayon1 *# Rayon du cercle*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon2 : rayon2 *# None si ```cercle=False``` ou le rayon du cercle généré autour du premier*  
       
