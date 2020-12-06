@@ -30,3 +30,5 @@ Lien Github : https://github.com/cyril-lav/osu-learn ”
 
 ### Travail de la semaine 3 [(voir ici)](TravailParSemaine/semaine3/semaine3.md) :  
 [Ajout](Config_Osu/config_Osu.md) des maps, du skin et du fichier de configuration d'Osu!.
+
+### Travail de la semaine 4 [(voir ici)](TravailParSemaine/semaine4/semaine4.md) :  
