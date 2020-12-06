@@ -34,12 +34,6 @@ def circlesDetection():
     return (b-a)
 
 
-# Commenter/décommenter l'un ou l'autre pour choisir entre
-# la détection de cercle ou la détection de bordures
-
-# edgesDetection()
-circlesDetection()
-
 tr = Trainer()
 nbEssais = 10
 temps = np.zeros(nbEssais)
