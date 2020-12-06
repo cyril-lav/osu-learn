@@ -28,3 +28,10 @@ Fonctions :
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- (x2,y2) : tuple *# Coordonée x et y du centre du cercle de fin du slider*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon1 : int *# Rayon du cercle*  
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- rayon2 : int *# Rayon du cercle d'approche du slider* 
+
+### Temps de calcul script détection de cercles (LAVEYSSIERE Cyril) :
+
+#### Temps de calcul moyen pour la détection de cercles (position et rayon) sur une image : 
+Test réalisé avec le script -[circleDetection](../../Osu!Learn/Code/circleDetection/main.py) pour un nombre de cercles compris entre 1 et 10 sur une image de taille 800*600 et 10 000 essais généré grâce au script -[imgAiTrainer](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) :
+
+Temps de calcul moyen : 0.0132 secondes pour  10000 essais
