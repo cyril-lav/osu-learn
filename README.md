@@ -10,7 +10,7 @@ Projet initial produit par des étudiants de l’Université Clermont-Auvergne :
   -Justin Miteran  
   -Hugo Barrandon  
   -Ivan Le Teuff  
-Lien Github : https://github.com/cyril-lav/osu-learn ”
+Lien Github : "https://github.com/cyril-lav/osu-learn"
 
 
 
