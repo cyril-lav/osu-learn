@@ -35,3 +35,7 @@ Fonctions :
 Test réalisé avec le script -[circleDetection](../../Osu!Learn/Code/circleDetection/main.py) pour un nombre de cercles compris entre 1 et 10 sur une image de taille 800*600 et 10 000 essais généré grâce au script -[imgAiTrainer](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) :
 
 Temps de calcul moyen : 0.0132 secondes pour  10000 essais
+
+### BackPropagation (BARRANDON Hugo):
+#### Travail sur la backpropagation:
+Etude du principe et de l'algorithme optimisé.
