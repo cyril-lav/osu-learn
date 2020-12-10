@@ -32,3 +32,6 @@ Lien Github : "https://github.com/cyril-lav/osu-learn"
 [Ajout](Config_Osu/config_Osu.md) des maps, du skin et du fichier de configuration d'Osu!.
 
 ### Travail de la semaine 4 [(voir ici)](TravailParSemaine/semaine4/semaine4.md) :  
+
+### Travail de la semaine 5 [(voir ici)](TravailParSemaine/semaine5/semaine5.md) :  
+Choisir les outputs du réseau de neurones supervisé.
