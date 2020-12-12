@@ -3,6 +3,7 @@
 from PIL import Image, ImageDraw
 import random
 from math import sqrt,acos,pi
+import os
 
 class Trainer:
     
@@ -45,16 +46,19 @@ class Trainer:
         return posx+d/2,posy+d/2,d/2,rayon2,img
 
     # fonction qui génère une image pour entréner l'IA de reconnaissance de slider en prenant la taille de l'image
-    def createSlider(self,size):
+    def createSlider(self,size,droit,start):
         # appel de la création de l'image
-        x1,y1,x2,y2,r1,r2,img = self.__slider(size)
-        # sauvegarde l'image dans les Assets
+        if droit == True :
+            debut,fin,cercle,r1,r2,img = self.__slider(size,start)
+            # sauvegarde l'image dans les Assets
+        else :
+            debut,fin,cercle,r1,r2,img = self.__sliderArr(size,start)
         img.save("../../../Assets/imgAiTrainer/slider.png", "PNG")
         # retour des informations sur l'image
-        return (x1,y1),(x2,y2),r1,r2
+        return debut,fin,cercle,r1,r2
     
     # fonction qui crée un slider
-    def __slider(self,size) :
+    def __slider(self,size,start) :
         # créer une image noir de la taille pasé en paramêtre
         img = Image.new('RGB', size)
         # genère un diamêtre aléatoire
@@ -102,16 +106,36 @@ class Trainer:
             draw.arc([c1[0]-d/2,c1[1]-d/2,c1[0]+d/2,c1[1]+d/2],a+180,a,fill='white', width=10)
             draw.arc([c2[0]-d/2,c2[1]-d/2,c2[0]+d/2,c2[1]+d/2],a,a+180,fill='white', width=10)
         
-        #cercle clic
-        draw.ellipse([c1[0]-d/2,c1[1]-d/2,c1[0]+d/2,c1[1]+d/2], fill = 'white', outline ='black', width=5) 
-        # si on veut générer un deuxième cercle autour
-        # ecart entre les deux cercles généré aléatoirement
-        ecartD = random.randint(0, 75)
-        # ecart entre les deux cercles dessine le cercle
-        draw.ellipse([c1[0]-d/2-ecartD,c1[1]-d/2-ecartD,c1[0]+d/2+ecartD,c1[1]+d/2+ecartD], fill = None, outline ='White', width=5)
+        if(start == True):
+            #cercle clic
+            draw.ellipse([c1[0]-d/2,c1[1]-d/2,c1[0]+d/2,c1[1]+d/2], fill = 'white', outline ='black', width=5) 
+            # si on veut générer un deuxième cercle autour
+            # ecart entre les deux cercles généré aléatoirement
+            ecartD = random.randint(0, 75)
+            # ecart entre les deux cercles dessine le cercle
+            draw.ellipse([c1[0]-d/2-ecartD,c1[1]-d/2-ecartD,c1[0]+d/2+ecartD,c1[1]+d/2+ecartD], fill = None, outline ='White', width=5)
+            # retour des information sur les cercles
+            return (c1[0],c1[1]),(c2[0],c2[1]),(c1[0],c1[1]),d/2,d/2+ecartD,img
+        else:
+            #génére un vecteur d'une tailler aléatoire entre les deux cercles
+            vC = self.__v(v1,c1[0],c1[1],random.random()*-1)
+            #cercle clic aléatoire sur le slider
+            draw.ellipse([vC[2]-d/2,vC[3]-d/2,vC[2]+d/2,vC[3]+d/2], fill = 'white', outline ='black', width=5) 
+            # retour des information sur les cercles
+            return (c1[0],c1[1]),(c2[0],c2[1]),(vC[2],vC[3]),d/2,None,img
+    
+    #slider arrondie
+    def __sliderArr(self,size,start):
+        img = Image.new('RGB', size)
+        nb = len(os.listdir("../../../Assets/imgAiTrainer/sliderArr"))
+        num = random.randint(1, nb)
+        slider = Image.open("../../../Assets/imgAiTrainer/sliderArr/"+str(num)+'.png')
+        slider = slider.rotate(random.randint(0, 359),expand = 1)
         
-        # retour des information sur les cercles
-        return c1[0],c1[1],c2[0],c2[1],d/2,d/2+ecartD,img
+        img.paste(slider,(random.randint(0, size[0]-slider.size[0]),random.randint(0, size[1]-slider.size[1])))
+        return None,None,None,None,None,img
+
+
     
     # fonction pour changer les coordonées et la taille d'un vecteur
     def __v(self,v,x,y,n) :
