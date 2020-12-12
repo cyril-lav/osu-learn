@@ -126,13 +126,19 @@ class Trainer:
     
     #slider arrondie
     def __sliderArr(self,size,start):
+        # création image
         img = Image.new('RGB', size)
+        # longeur de numero
         nb = len(os.listdir("../../../Assets/imgAiTrainer/sliderArr"))
+        # numero du slider a charger
         num = random.randint(1, nb)
+        # ouverture image slider
         slider = Image.open("../../../Assets/imgAiTrainer/sliderArr/"+str(num)+'.png')
+        # rotation du slider
         slider = slider.rotate(random.randint(0, 359),expand = 1)
-        
+        # copy du slider sur l'impage a une position aléatoire
         img.paste(slider,(random.randint(0, size[0]-slider.size[0]),random.randint(0, size[1]-slider.size[1])))
+        # retour des infos du slider
         return None,None,None,None,None,img
 
 
@@ -158,3 +164,24 @@ class Trainer:
     def __angle(self,v1,v2):
         cos = (v1[2]*v2[2]+v1[3]*v2[3])/(self.__norme(v1)*self.__norme(v2))
         return acos(cos)
+    
+    def createSpinner(self,size):
+        # appel de la création de l'image
+        cercle,r1,img = self.__spinner(size)
+        # sauvegarde l'image dans les Assets
+        img.save("../../../Assets/imgAiTrainer/spinner.png", "PNG")
+        # retour des informations sur l'image
+        return cercle,r1
+
+    def __spinner(self,size):
+        img = Image.new('RGB', size)
+        spinner = Image.open("../../../Assets/imgAiTrainer/spinner/spinner.png")
+        if(size[1] > spinner.size[1]*size[0]/spinner.size[0]):
+            newSize = (size[0],round(spinner.size[1]*size[0]/spinner.size[0]))
+            r = size[0]*267/spinner.size[0]
+        else :
+            newSize = (round(spinner.size[0]*size[1]/spinner.size[1]),size[1])
+            r = size[1]*267/spinner.size[1]
+        spinner = spinner.resize(newSize)
+        img.paste(spinner,(round(size[0]/2-spinner.size[0]/2),round(size[1]/2-spinner.size[1]/2)))
+        return (size[0]/2,size[1]/2),round(r),img
