@@ -12,8 +12,9 @@ Les autres test sont pour voir les différentes possibilités pour plus tard.
 
 
 ### SCRIPT ENTRAINEMENT AI RECONNAISSANCE IMAGES (MITERAN Justin) :  
-#### Créer un script capable de générer une image contenant un slider coubé pour entrainer l'IA de reconnaissance de slider
+#### Créer un script capable de générer une image contenant un slider coubé ou un spinner pour entrainer l'IA de reconnaissance d'image
 <p align="center"><img src="../../Osu!Learn/Assets/imgAiTrainer/slider.png" width="200px"></p>
+<p align="center"><img src="../../Osu!Learn/Assets/imgAiTrainer/spinner.png" width="200px"></p>
 
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/imgAiTrainer.py) contenant la classe Trainer  
   -[script](../../Osu!Learn/Code/utilitaire/imgAiTrainer/testImgAiTrainer.py) de test la génération d'image dans Assets  
