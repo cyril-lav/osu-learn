@@ -3,7 +3,8 @@
 from PIL import Image, ImageDraw
 import random
 from math import sqrt,acos,pi
-import os
+import sys,os
+from pathlib import Path
 
 class Trainer:
     
@@ -12,7 +13,10 @@ class Trainer:
         # appel de la création de l'image
         x,y,r1,r2,img = self.__circle(size, circle)
         # sauvegarde l'image dans les Assets
+        tmp = os.getcwd()
+        os.chdir(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/cercle.png", "PNG")
+        os.chdir(tmp)
         # retour des informations sur l'image
         return (x,y),r1,r2
     
@@ -53,7 +57,10 @@ class Trainer:
             # sauvegarde l'image dans les Assets
         else :
             debut,fin,cercle,r1,r2,img = self.__sliderArr(size,start)
+        tmp = os.getcwd()
+        print(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/slider.png", "PNG")
+        os.chdir(tmp)
         # retour des informations sur l'image
         return debut,fin,cercle,r1,r2
     
@@ -129,11 +136,14 @@ class Trainer:
         # création image
         img = Image.new('RGB', size)
         # longeur de numero
+        tmp = os.getcwd()
+        print(os.path.abspath(Path(__file__).parent))
         nb = len(os.listdir("../../../Assets/imgAiTrainer/sliderArr"))
         # numero du slider a charger
         num = random.randint(1, nb)
         # ouverture image slider
         slider = Image.open("../../../Assets/imgAiTrainer/sliderArr/"+str(num)+'.png')
+        os.chdir(tmp)
         # rotation du slider
         slider = slider.rotate(random.randint(0, 359),expand = 1)
         # copy du slider sur l'impage a une position aléatoire
@@ -169,13 +179,19 @@ class Trainer:
         # appel de la création de l'image
         cercle,r1,img = self.__spinner(size)
         # sauvegarde l'image dans les Assets
+        tmp = os.getcwd()
+        print(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/spinner.png", "PNG")
+        os.chdir(tmp)
         # retour des informations sur l'image
         return cercle,r1
 
     def __spinner(self,size):
         img = Image.new('RGB', size)
+        tmp = os.getcwd()
+        print(os.path.abspath(Path(__file__).parent))
         spinner = Image.open("../../../Assets/imgAiTrainer/spinner/spinner.png")
+        os.chdir(tmp)
         if(size[1] > spinner.size[1]*size[0]/spinner.size[0]):
             newSize = (size[0],round(spinner.size[1]*size[0]/spinner.size[0]))
             r = size[0]*267/spinner.size[0]
