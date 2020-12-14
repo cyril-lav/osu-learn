@@ -27,8 +27,8 @@ def isSortie(x,y):
     return x < 0 or x > 800 or y < 0 or y > 600
 
 #fonction qui traduit les coordonnée relative à la fenêtre en coordonnée relative à l'écran
-def viser(xF_g,yF_g,xV,yV):
-        return xV+xF_g+2,yV+yF_g+26
+def viser(xF_g,yF_d,xV,yV):
+        return xV+xF_g+2,yV+yF_d
 
 #fonction de clique
 def cliquer():
