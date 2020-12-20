@@ -58,7 +58,7 @@ class Trainer:
         else :
             debut,fin,cercle,r1,r2,img = self.__sliderArr(size,start)
         tmp = os.getcwd()
-        print(os.path.abspath(Path(__file__).parent))
+        os.chdir(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/slider.png", "PNG")
         os.chdir(tmp)
         # retour des informations sur l'image
@@ -137,7 +137,7 @@ class Trainer:
         img = Image.new('RGB', size)
         # longeur de numero
         tmp = os.getcwd()
-        print(os.path.abspath(Path(__file__).parent))
+        os.chdir(os.path.abspath(Path(__file__).parent))
         nb = len(os.listdir("../../../Assets/imgAiTrainer/sliderArr"))
         # numero du slider a charger
         num = random.randint(1, nb)
@@ -180,7 +180,7 @@ class Trainer:
         cercle,r1,img = self.__spinner(size)
         # sauvegarde l'image dans les Assets
         tmp = os.getcwd()
-        print(os.path.abspath(Path(__file__).parent))
+        os.chdir(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/spinner.png", "PNG")
         os.chdir(tmp)
         # retour des informations sur l'image
@@ -189,7 +189,7 @@ class Trainer:
     def __spinner(self,size):
         img = Image.new('RGB', size)
         tmp = os.getcwd()
-        print(os.path.abspath(Path(__file__).parent))
+        os.chdir(os.path.abspath(Path(__file__).parent))
         spinner = Image.open("../../../Assets/imgAiTrainer/spinner/spinner.png")
         os.chdir(tmp)
         if(size[1] > spinner.size[1]*size[0]/spinner.size[0]):
