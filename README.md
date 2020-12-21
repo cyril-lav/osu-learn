@@ -35,4 +35,4 @@ Lien Github : "https://github.com/cyril-lav/osu-learn"
 
 ### Travail de la semaine 5 [(voir ici)](TravailParSemaine/semaine5/semaine5.md) :  
 Choisir les outputs du réseau de neurones supervisé.  
-## Travail de la semaine 6 [(voir ici)](TravailParSemaine/semaine6/semaine6.md) :  
+### Travail de la semaine 6 [(voir ici)](TravailParSemaine/semaine6/semaine6.md) :  
