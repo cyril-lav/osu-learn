@@ -39,22 +39,22 @@ class TrainCercleDetection:
         print("---------------------\nmodel générée")
         return model
 
-    def __entrainement(self,model,batch_size,epochs):
+    def __entrainement(self,nbImages,model,batch_size,epochs):
         #model.load_weights('save/poids/model')
         print("---------------------\npoids chargée\n---------------------")
-        limg , lLabel = self.__listImg(1000,800,600)
+        limg , lLabel = self.__listImg(nbImages,800,600)
         print("Images train générée\n---------------------")
         model.fit(limg, lLabel,batch_size=batch_size, epochs=epochs, verbose=1)
         model.save_weights('save/poids/model')
         del limg
         del lLabel
 
-    def train(self,batch_size,epochs):
+    def train(self,nbImages,batch_size,epochs):
         model = self.__modele()
         i = 0
         while 1:
             i=i+1
             gc.collect()
-            self.__entrainement(model,batch_size,epochs)
+            self.__entrainement(model,nbImages,batch_size,epochs)
             model.save("save/model/model")
             print("---------------------\nTrain ",i," fini\n---------------------")
