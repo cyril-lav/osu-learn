@@ -39,7 +39,7 @@ class TrainCercleDetection:
         print("---------------------\nmodel générée")
         return model
 
-    def __entrainement(self,nbImages,model,batch_size,epochs):
+    def __entrainement(self,model,nbImages,batch_size,epochs):
         #model.load_weights('save/poids/model')
         print("---------------------\npoids chargée\n---------------------")
         limg , lLabel = self.__listImg(nbImages,800,600)
