@@ -40,7 +40,7 @@ class TrainCercleDetection:
         return model
 
     def __entrainement(self,model,nbImages,batch_size,epochs):
-        #model.load_weights('save/poids/model')
+        model.load_weights('save/poids/model')
         print("---------------------\npoids chargée\n---------------------")
         limg , lLabel = self.__listImg(nbImages,800,600)
         print("Images train générée\n---------------------")
@@ -58,3 +58,12 @@ class TrainCercleDetection:
             self.__entrainement(model,nbImages,batch_size,epochs)
             model.save("save/model/model")
             print("---------------------\nTrain ",i," fini\n---------------------")
+
+    def evaluate(self,nbImages):
+        model = self.__modele()
+        model.load_weights('save/poids/model')
+        print("---------------------\npoids chargé\n---------------------")
+        limg , lLabel = self.__listImg(nbImages,800,600)
+        print("Images train générée\n---------------------")
+        scores = model.evaluate(limg, lLabel)
+        print("Erreur : ",scores)
