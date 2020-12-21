@@ -35,12 +35,13 @@ class TrainCercleDetection:
         model.add(keras.layers.Dense(4, activation='linear'))
 
         opt = keras.optimizers.Adam(learning_rate=1e-4)
-        model.compile(optimizer=opt,loss='mean_squared_error')
+        model.compile(optimizer=opt,loss='mean_squared_error',metrics=['accuracy'])
         print("---------------------\nmodel générée")
         return model
 
     def __entrainement(self,model,nbImages,batch_size,epochs):
-        model.load_weights('save/poids/model')
+        if len(os.listdir('save/poids')) != 0:
+            model.load_weights('save/poids/model')
         print("---------------------\npoids chargée\n---------------------")
         limg , lLabel = self.__listImg(nbImages,800,600)
         print("Images train générée\n---------------------")
@@ -60,10 +61,9 @@ class TrainCercleDetection:
             print("---------------------\nTrain ",i," fini\n---------------------")
 
     def evaluate(self,nbImages):
-        model = self.__modele()
-        model.load_weights('save/poids/model')
-        print("---------------------\npoids chargé\n---------------------")
+        model = keras.models.load_model('save/model/model')
+        print("---------------------\nmodel chargé\n---------------------")
         limg , lLabel = self.__listImg(nbImages,800,600)
         print("Images train générée\n---------------------")
         scores = model.evaluate(limg, lLabel)
-        print("Erreur : ",scores)
+        print("Précision : %.5f %% " % (scores[1]*100))
