@@ -1,6 +1,6 @@
 ### IA supervisé de reconnaissance de cercles (MITERAN Justin) :  
 #### Créer une IA capable de détécter un cercle et de donner son centre et ses deux rayons.
-<p align="center"><img src="ia.png" width="200px"></p>
+<p align="center"><img src="ia.png" width="400px"></p>
 
   -[script](../../Osu!Learn/Code/IACercleDetection/TrainCercledetection.py) contenant la classe TrainCercleDetection  
   -[script](../../Osu!Learn/Code/IACercleDetection/testTrainCercledetection.py) contenant l'entrainement de l'IA  
