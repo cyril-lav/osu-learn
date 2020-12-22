@@ -35,7 +35,7 @@ class TrainCercleDetection:
         model.add(keras.layers.Dense(4, activation='linear'))
 
         opt = keras.optimizers.Adam(learning_rate=1e-4)
-        model.compile(optimizer=opt,loss='mean_squared_error',metrics=['accuracy'])
+        model.compile(optimizer=opt,loss='mean_squared_error',metrics=[keras.metrics.mean_absolute_percentage_error])
         print("---------------------\nmodel générée")
         return model
 
@@ -66,4 +66,4 @@ class TrainCercleDetection:
         limg , lLabel = self.__listImg(nbImages,800,600)
         print("Images train générée\n---------------------")
         scores = model.evaluate(limg, lLabel)
-        print("Précision : %.5f %% " % (scores[1]*100))
+        print("Précision : %.5f %%" % (100-scores[1]))
