@@ -37,7 +37,7 @@ for i in range(50):
     l.append(a)
     #time.sleep(1)
 
-print(statistics.mean(l)," ms")
+print("moyenne : ",statistics.mean(l)," ms")
 
 
 
