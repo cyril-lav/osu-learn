@@ -2,27 +2,27 @@
 """
 Created on Sun Dec 20 08:56:42 2020
 
-@author: sebas
+@author: sebastien
 """
 
-import numpy as np
-import cv2
+from tensorflow import keras
 from PIL import ImageGrab
+import numpy as np
+import win32gui
 
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1920, 1080))
 
-while True:
-    img = ImageGrab.grab(bbox=(0,0,800,600))
-    img_np = np.array(img)
-    
-    frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2RGB)
-    
-    cv2.imshow("Screen", frame)
-    
-    #f9 
-    if cv2.waitKey(1) == 120:
-        break
+def position():
+    window_handle = win32gui.FindWindow(None, "osu!")
+    if window_handle!=0 and win32gui.GetClassName(window_handle)[0:28] == "WindowsForms10.Window.2b.app":
+        return win32gui.GetWindowRect(window_handle),0
+    return win32gui.GetWindowRect(window_handle),-1
 
-out.release()
-cv2.destroyAllWindows
+def Foncimg(x,y):
+    img = ImageGrab.grab(bbox=(x,y,800,600))
+    img = img.resize((120, 160))
+    img = keras.preprocessing.image.img_to_array(img)
+    imgIa = np.expand_dims(img, axis=0)
+    return imgIa
+
+pos,i = position()
+img1 = Foncimg(pos[0],pos[1])
