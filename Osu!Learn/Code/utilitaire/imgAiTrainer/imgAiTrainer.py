@@ -201,3 +201,52 @@ class Trainer:
         spinner = spinner.resize(newSize)
         img.paste(spinner,(round(size[0]/2-spinner.size[0]/2),round(size[1]/2-spinner.size[1]/2)))
         return (size[0]/2,size[1]/2),round(r),img
+
+    def createMultiCercle(self,size,nbMaxCercles):
+        nbCercles = random.randint(0,nbMaxCercles)
+        x,y,r1,r2,img = self.__multiCercle(size,nbCercles)
+        # sauvegarde l'image dans les Assets
+        tmp = os.getcwd()
+        os.chdir(os.path.abspath(Path(__file__).parent))
+        img.save("../../../Assets/imgAiTrainer/multiCercle.png", "PNG")
+        os.chdir(tmp)
+        # retour des informations sur l'image
+        return x,y,r1,r2,1
+
+    def __multiCercle(self,size,nbCercles):
+        # créer une image noir de la taille pasé en paramêtre
+        img = Image.new('RGB', size)
+        # permet de dessiner sur l'image
+        draw = ImageDraw.Draw(img)
+        x = 999999
+        y = 999999
+        r1 = 999999
+        r2 = 999999
+        d = random.randint(70, 150)
+        for i in range(nbCercles ):
+            # genère un diamêtre aléatoire
+            # genère une position X aléatoire dans l'écran
+            posx = random.randint(0, size[0]-d)
+            # genère une position Y aléatoire dans l'écran
+            posy = random.randint(0, size[1]-d)
+            # dessine un cercle blanc dans l'écran
+            draw.ellipse([posx,posy,posx+d,posy+d], fill = 'white', outline ='black', width=5)
+            # ecart entre les deux cercles généré aléatoirement
+            ecartD = random.randint(0, 75)
+            # ecart entre les deux cercles dessine le cercle
+            draw.ellipse([posx-ecartD,posy-ecartD,posx+d+ecartD,posy+d+ecartD], fill = None, outline ='White', width=5)
+            # calcule le rayon du deuxième cercle
+            rayon2 = d/2+ecartD
+            if r2==999999 or rayon2-d/2<r2-r1:
+                r1=d/2
+                r2=rayon2
+                x=posx+d/2
+                y=posy+d/2
+                
+        return x,y,r1,r2,img
+
+    def __max(self,val1,val2):
+        if val1>va2:
+            return val1
+        else:
+            return val2
