@@ -8,10 +8,12 @@ import gc
 sys.path.append('..')
 from utilitaire.imgAiTrainer.imgAiTrainer import Trainer
 
+#entrainement de l'ia supervisée
 class TrainCercleDetection:
     __tr = Trainer()
     __img_shape = (120,160,3)
 
+    #génère la liste de donnée pour l'entrainement de l'IA
     def __listImg(self,nb,x,y):
         lImg = []
         lLabel = []
@@ -25,6 +27,7 @@ class TrainCercleDetection:
         lLabel = np.array(lLabel)
         return lImg, lLabel
 
+    # modele de l'IA
     def __modele(self):
         model = keras.models.Sequential()
         model.add(keras.layers.Convolution2D(32, 5, 5, padding='same',  activation='relu', input_shape=self.__img_shape))
@@ -39,6 +42,7 @@ class TrainCercleDetection:
         print("---------------------\nmodel générée")
         return model
 
+    #entrainement de l'IA
     def __entrainement(self,model,nbImages,batch_size,epochs):
         if len(os.listdir('save/poids')) != 0:
             model.load_weights('save/poids/model')
@@ -50,6 +54,7 @@ class TrainCercleDetection:
         del limg
         del lLabel
 
+    # mise en place de l'entrainement de l'IA
     def train(self,nbImages,batch_size,epochs):
         model = self.__modele()
         i = 0
