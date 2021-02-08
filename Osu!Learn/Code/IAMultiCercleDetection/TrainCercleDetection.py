@@ -22,11 +22,11 @@ class TrainCercleDetection:
         lImg = []
         lLabel = []
         for i in range(nb):
-            cercleT = self.__tr.createMultiCercle((x,y),6)
+            cercleT = self.__tr.createMultiCercle((x,y),2)
             img = tf.keras.preprocessing.image.load_img("../../Assets/imgAiTrainer/multiCercle.png",target_size=(120,160))
             img = keras.preprocessing.image.img_to_array(img)
             lImg.append(img)
-            lLabel.append((cercleT[0],cercleT[1],cercleT[2],cercleT[3],cercleT[4]))
+            lLabel.append((cercleT[0],cercleT[1],cercleT[2],cercleT[3]))
         lImg = np.array(lImg)
         lLabel = np.array(lLabel)
         return lImg, lLabel
@@ -37,8 +37,9 @@ class TrainCercleDetection:
         model.add(keras.layers.Convolution2D(64, 5, 5, padding='same',  activation='relu'))
         model.add(keras.layers.Convolution2D(128, 5, 5, padding='same',  activation='relu'))
         model.add(keras.layers.Flatten())
-        model.add(keras.layers.Dense(100, activation='relu'))
-        model.add(keras.layers.Dense(5, activation='linear'))
+        model.add(keras.layers.Dense(256, activation='relu'))
+        model.add(keras.layers.Dense(128, activation='relu'))
+        model.add(keras.layers.Dense(4, activation='linear'))
 
         opt = keras.optimizers.Adam(learning_rate=1e-4)
         model.compile(optimizer=opt,loss='mean_squared_error')

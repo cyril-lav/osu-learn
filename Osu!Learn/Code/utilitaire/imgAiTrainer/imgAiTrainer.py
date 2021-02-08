@@ -204,24 +204,25 @@ class Trainer:
 
     def createMultiCercle(self,size,nbMaxCercles):
         nbCercles = random.randint(0,nbMaxCercles)
-        x,y,r1,r2,img = self.__multiCercle(size,nbCercles)
+        x,y,r1,r2,classe,img = self.__multiCercle(size,nbCercles)
         # sauvegarde l'image dans les Assets
         tmp = os.getcwd()
         os.chdir(os.path.abspath(Path(__file__).parent))
         img.save("../../../Assets/imgAiTrainer/multiCercle.png", "PNG")
         os.chdir(tmp)
         # retour des informations sur l'image
-        return x,y,r1,r2,1
+        return x,y,r1,r2,classe
 
     def __multiCercle(self,size,nbCercles):
         # créer une image noir de la taille pasé en paramêtre
         img = Image.new('RGB', size)
         # permet de dessiner sur l'image
         draw = ImageDraw.Draw(img)
-        x = 999999
-        y = 999999
-        r1 = 999999
-        r2 = 999999
+        x = []
+        y = []
+        r1 = []
+        r2 = []
+        classe = []
         d = random.randint(70, 150)
         for i in range(nbCercles ):
             # genère un diamêtre aléatoire
@@ -237,16 +238,16 @@ class Trainer:
             draw.ellipse([posx-ecartD,posy-ecartD,posx+d+ecartD,posy+d+ecartD], fill = None, outline ='White', width=5)
             # calcule le rayon du deuxième cercle
             rayon2 = d/2+ecartD
-            if r2==999999 or rayon2-d/2<r2-r1:
-                r1=d/2
-                r2=rayon2
-                x=posx+d/2
-                y=posy+d/2
+            r1.append(d/2)
+            r2.append(rayon2)
+            x.append(posx+d/2)
+            y.append(posy+d/2)
+            classe.append(1)
                 
-        return x,y,r1,r2,img
+        return x,y,r1,r2,classe,img
 
     def __max(self,val1,val2):
-        if val1>va2:
+        if val1>val2:
             return val1
         else:
             return val2

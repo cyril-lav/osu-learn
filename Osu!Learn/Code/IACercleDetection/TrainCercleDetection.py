@@ -5,6 +5,11 @@ from tensorflow import keras
 from PIL import Image
 from PIL import ImageDraw
 import gc
+config = tf.compat.v1.ConfigProto(gpu_options = 
+                         tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.8)
+)
+config.gpu_options.allow_growth = True
+session = tf.compat.v1.Session(config=config)
 sys.path.append('..')
 from utilitaire.imgAiTrainer.imgAiTrainer import Trainer
 
