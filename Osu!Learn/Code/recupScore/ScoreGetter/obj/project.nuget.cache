@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ghHwTtUqW/SpUKpIVtEnD+/fAsiDlv7Qa+oN9lm6eTo+3OH/NFyjOI2hkcR5sWqoNK2JiBAeMLn8QAgbPfpvOQ==",
+  "dgSpecHash": "ZZygVihsI8uqGAmZFL/BkD5rbSOIypxRzbGMkingOHIpkEXuuMu7G1kHrrmrWbMT1/S/P+43fl7FptgU+XMV3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\ScoreGetter.csproj",
+  "projectFilePath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\ScoreGetter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

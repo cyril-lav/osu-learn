@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\ScoreGetter.csproj": {}
+    "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\ScoreGetter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\ScoreGetter.csproj": {
+    "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\ScoreGetter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\ScoreGetter.csproj",
+        "projectUniqueName": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\ScoreGetter.csproj",
         "projectName": "ScoreGetter",
-        "projectPath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\ScoreGetter.csproj",
+        "projectPath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\ScoreGetter.csproj",
         "packagesPath": "C:\\Users\\hugob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\osu\\score\\ScoreGetter\\ScoreGetter\\obj\\",
+        "outputPath": "C:\\Users\\hugob\\Desktop\\Cours\\Semestre3\\Periode6\\Projet-OSU!\\ProjetGit\\trunk\\Osu!Learn\\Code\\recupScore\\ScoreGetter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

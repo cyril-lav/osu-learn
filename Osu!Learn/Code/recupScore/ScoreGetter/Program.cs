@@ -17,8 +17,10 @@ namespace ScoreGetter
         public static int c50 = 0;
         public static int cmiss = 0;
         public static String sortie = "0";
-        public static String sortiePast="-1";
         public static Process osu = GetId.FindOsuProcess();
+
+        public static bool send = false;
+        public static bool change = false;
 
         public static void getScore()
         {
@@ -42,12 +44,14 @@ namespace ScoreGetter
                 {
                     sortie="300";
                     m_last_300 = c300;
+                    change = true;
                 }
 
                 if (c100 != m_last_100 && c100 != 0 && !(m_last_100 == 0 && c100 != 1))
                 {
                     sortie="100";
                     m_last_100 = c100;
+                    change = true;
                 }
 
 
@@ -55,22 +59,25 @@ namespace ScoreGetter
                 {
                     sortie="50";
                     m_last_50 = c50;
+                    change = true;
                 }
 
                 if (cmiss != m_last_miss && cmiss != 0 && !(m_last_miss == 0 && cmiss != 1))
                 {
                     sortie="0";
                     m_last_miss = cmiss;
+                    change = true;
                 }
 
                 c300 = finder.Get300Count();
                 c100 = finder.Get100Count();
                 c50 = finder.Get50Count();
                 cmiss = finder.GetMissCount();
-                if (sortie != sortiePast)
+                if (change)
                 {
                     Console.WriteLine(sortie);
-                    sortiePast = sortie;
+                    change = false;
+                    send = false;
                 }
             }
         }

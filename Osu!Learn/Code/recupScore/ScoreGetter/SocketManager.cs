@@ -32,12 +32,16 @@ namespace ScoreGetter.OsuTools
                     int bytesRec = socket.Receive(buffer);
 
                     data += Encoding.ASCII.GetString(buffer, 0, bytesRec);
-                    Console.WriteLine("Text received : {0}", data);
+                    //Console.WriteLine("Text received : {0}", data);
 
                     byte[] msg = new Byte[1024];
-                    msg = Encoding.ASCII.GetBytes(Program.sortie);
-
-                    socket.Send(msg);
+                    if (!Program.send)
+                    {
+                        msg = Encoding.ASCII.GetBytes(Program.sortie);
+                        socket.Send(msg);
+                        Program.send = true;
+                    }
+                    
                     socket.Shutdown(SocketShutdown.Both);
                     socket.Close();
                 }

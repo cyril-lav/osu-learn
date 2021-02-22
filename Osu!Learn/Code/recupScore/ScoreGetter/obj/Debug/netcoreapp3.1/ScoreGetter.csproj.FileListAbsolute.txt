@@ -11,3 +11,16 @@ C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\osu\score\ScoreGette
 C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\osu\score\ScoreGetter\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.pdb
 C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\osu\score\ScoreGetter\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.genruntimeconfig.cache
 C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\osu\score\ScoreGetter\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.csprojAssemblyReference.cache
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.exe
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.deps.json
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.runtimeconfig.json
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.runtimeconfig.dev.json
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.dll
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\bin\Debug\netcoreapp3.1\ScoreGetter.pdb
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.csprojAssemblyReference.cache
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.AssemblyInfoInputs.cache
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.AssemblyInfo.cs
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.csproj.CoreCompileInputs.cache
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.dll
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.pdb
+C:\Users\hugob\Desktop\Cours\Semestre3\Periode6\Projet-OSU!\ProjetGit\trunk\Osu!Learn\Code\recupScore\ScoreGetter\obj\Debug\netcoreapp3.1\ScoreGetter.genruntimeconfig.cache
