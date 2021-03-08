@@ -2,6 +2,7 @@ import sys, os
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
+import PIL
 from PIL import Image
 from PIL import ImageDraw
 import gc
@@ -24,7 +25,9 @@ class TrainCercleDetection:
         lLabel = []
         for i in range(nb):
             cercleT = self.__tr.createCercle((x,y),True)
-            img = tf.keras.preprocessing.image.load_img("../../Assets/imgAiTrainer/cercle.png",target_size=(120,160))
+            img = Image.open("../../Assets/imgAiTrainer/cercle.png")
+            img = img.resize((160, 120))
+            #img = tf.keras.preprocessing.image.load_img("../../Assets/imgAiTrainer/cercle.png",target_size=(120,160))
             img = keras.preprocessing.image.img_to_array(img)
             lImg.append(img)
             lLabel.append((cercleT[0][0],cercleT[0][1],cercleT[1],cercleT[2]))

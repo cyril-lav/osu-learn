@@ -34,15 +34,17 @@ class Trainer:
         posx = random.randint(0, size[0]-d)
         # genère une position Y aléatoire dans l'écran
         posy = random.randint(0, size[1]-d)
+
+        couleur = random.randint(180, 255)
         # dessine un cercle blanc dans l'écran
-        draw.ellipse([posx,posy,posx+d,posy+d], fill = 'white', outline ='black', width=5)
+        draw.ellipse([posx,posy,posx+d,posy+d], fill = (couleur,couleur,couleur), outline ='black', width=5)
         
         # si on veut générer un deuxième cercle autour
         if(circle):
             # ecart entre les deux cercles généré aléatoirement
             ecartD = random.randint(0, 75)
             # ecart entre les deux cercles dessine le cercle
-            draw.ellipse([posx-ecartD,posy-ecartD,posx+d+ecartD,posy+d+ecartD], fill = None, outline ='White', width=5)
+            draw.ellipse([posx-ecartD,posy-ecartD,posx+d+ecartD,posy+d+ecartD], fill = None, outline =(couleur,couleur,couleur), width=5)
             # calcule le rayon du deuxième cercle
             rayon2 = d/2+ecartD
         
