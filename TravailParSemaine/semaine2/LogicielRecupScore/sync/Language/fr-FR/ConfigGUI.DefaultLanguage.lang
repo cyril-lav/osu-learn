@@ -1,0 +1,15 @@
+[fr-FR]
+BUTTON_OPEN=Open
+BUTTON_BROWSE=Browse
+BUTTON_FONT=Font
+BUTTON_COLOR=Color
+WINDOW_TITLE=Config
+WINDOW_TITLE_REQUIRE_RESTART=Some settings restart to take effect
+BUTTON_SAVE=Save
+LABEL_SAVED=Saved!
+LABEL_SAVED_SAVING=Saving...
+TRAY_HIDE_SHOW=Hide/Show
+TRAY_CONFIG=Config
+TRAY_OPEN_SYNC_FOLDER=Sync Folder
+TRAY_EXIT=Exit
+COMMAND_LINE_HINT=[ConfigGUI]Enter "config" to open the configuration panel.
